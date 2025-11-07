@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Developer | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+    <div class="grid-background"></div>
+
+    <nav class="nav">
+        <div class="logo" data-text="DEV">DEV</div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+            </div>
+            <div class="terminal-body">
+                <div class="terminal-line">
+                    <span class="prompt">$</span>
+                    <span class="command" id="typed-text"></span>
+                    <span class="cursor-blink">|</span>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="hero-title">
+            <span class="glitch" data-text="AI-POWERED">AI-POWERED</span>
+            <br>
+            <span class="gradient-text">DEVELOPER</span>
+        </h1>
+
+        <p class="hero-subtitle">Building tomorrow's solutions at the speed of thought</p>
+
+        <div class="cta-buttons">
+            <button class="btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
+                <span>View Projects</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </button>
+            <button class="btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+                <span>Get In Touch</span>
+            </button>
+        </div>
+
+        <div class="tech-stack">
+            <div class="tech-item">AI</div>
+            <div class="tech-item">React</div>
+            <div class="tech-item">Node</div>
+            <div class="tech-item">Python</div>
+            <div class="tech-item">Cloud</div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">01.</span>
+                About Me
+            </h2>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="highlight-text">I leverage AI to ship products faster than traditional development cycles.</p>
+
+                    <p>In today's rapidly evolving tech landscape, I've mastered the art of combining artificial intelligence with modern development practices to deliver high-quality solutions in record time.</p>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">10x</div>
+                            <div class="stat-label">Faster Development</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Code Quality</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">AI Assistance</div>
+                        </div>
+                    </div>
+
+                    <div class="skills-section">
+                        <h3>My AI-Powered Workflow</h3>
+                        <div class="workflow-list">
+                            <div class="workflow-item">
+                                <span class="workflow-icon">⚡</span>
+                                <span>Rapid Prototyping with AI Code Generation</span>
+                            </div>
+                            <div class="workflow-item">
+                                <span class="workflow-icon">🧠</span>
+                                <span>Intelligent Code Review & Optimization</span>
+                            </div>
+                            <div class="workflow-item">
+                                <span class="workflow-icon">🚀</span>
+                                <span>Automated Testing & Deployment</span>
+                            </div>
+                            <div class="workflow-item">
+                                <span class="workflow-icon">🎯</span>
+                                <span>AI-Driven Problem Solving</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code-window">
+                    <div class="code-header">
+                        <span>ai_workflow.py</span>
+                    </div>
+                    <pre class="code-content"><code><span class="code-keyword">class</span> <span class="code-class">AIWorkflow</span>:
+    <span class="code-keyword">def</span> <span class="code-function">__init__</span>(<span class="code-param">self</span>):
+        <span class="code-param">self</span>.tools = [
+            <span class="code-string">"Claude"</span>,
+            <span class="code-string">"GitHub Copilot"</span>,
+            <span class="code-string">"GPT-4"</span>,
+            <span class="code-string">"Custom AI Models"</span>
+        ]
+
+    <span class="code-keyword">def</span> <span class="code-function">build_project</span>(<span class="code-param">self</span>, idea):
+        prototype = <span class="code-param">self</span>.ai_generate(idea)
+        optimized = <span class="code-param">self</span>.ai_review(prototype)
+        tested = <span class="code-param">self</span>.ai_test(optimized)
+        <span class="code-keyword">return</span> <span class="code-param">self</span>.deploy(tested)
+
+    <span class="code-keyword">def</span> <span class="code-function">productivity_boost</span>(<span class="code-param">self</span>):
+        <span class="code-keyword">return</span> <span class="code-string">"10x faster"</span></code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02.</span>
+                Featured Projects
+            </h2>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-number">01</div>
+                    <div class="project-content">
+                        <h3>AI-Powered SaaS Platform</h3>
+                        <p>Built a complete SaaS application in 48 hours using AI-assisted development. Features include user authentication, payment processing, and real-time analytics.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
+                            <span>Stripe</span>
+                        </div>
+                        <div class="project-stats">
+                            <span>⚡ 48h build time</span>
+                            <span>🤖 80% AI-assisted</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-number">02</div>
+                    <div class="project-content">
+                        <h3>Real-Time Analytics Dashboard</h3>
+                        <p>Created a sophisticated analytics platform with AI-generated visualizations, predictive insights, and automated reporting capabilities.</p>
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                            <span>D3.js</span>
+                            <span>Python</span>
+                        </div>
+                        <div class="project-stats">
+                            <span>⚡ 72h delivery</span>
+                            <span>🤖 90% AI-assisted</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-number">03</div>
+                    <div class="project-content">
+                        <h3>E-Commerce Automation Suite</h3>
+                        <p>Developed an intelligent e-commerce platform with AI-driven inventory management, dynamic pricing, and customer behavior prediction.</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>ML</span>
+                        </div>
+                        <div class="project-stats">
+                            <span>⚡ 5 days</span>
+                            <span>🤖 85% AI-assisted</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-number">04</div>
+                    <div class="project-content">
+                        <h3>API Integration Framework</h3>
+                        <p>Designed a flexible framework for rapid API integration, leveraging AI to auto-generate adapters, validators, and comprehensive documentation.</p>
+                        <div class="project-tags">
+                            <span>TypeScript</span>
+                            <span>REST</span>
+                            <span>GraphQL</span>
+                            <span>OpenAI</span>
+                        </div>
+                        <div class="project-stats">
+                            <span>⚡ 36h build</span>
+                            <span>🤖 95% AI-assisted</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">03.</span>
+                Let's Build Together
+            </h2>
+
+            <div class="contact-content">
+                <p class="contact-text">Have a project in mind? Let's leverage AI to bring it to life faster than you thought possible.</p>
+
+                <div class="contact-grid">
+                    <a href="mailto:hello@example.com" class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <h3>Email</h3>
+                        <p>hello@example.com</p>
+                    </a>
+
+                    <a href="https://github.com" target="_blank" class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                        </div>
+                        <h3>GitHub</h3>
+                        <p>@yourusername</p>
+                    </a>
+
+                    <a href="https://linkedin.com" target="_blank" class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <p>/in/yourprofile</p>
+                    </a>
+
+                    <a href="https://twitter.com" target="_blank" class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                            </svg>
+                        </div>
+                        <h3>Twitter</h3>
+                        <p>@yourhandle</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Designed & Built with AI Assistance</p>
+            <p class="footer-subtitle">© 2025 AI-Powered Developer. Shipping at the speed of innovation.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
